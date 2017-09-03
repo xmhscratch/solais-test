@@ -1,14 +1,17 @@
 const system = global.system = new (require('solais'))
 
-system.install([
-    require('solais-server')
-]).then(() => {
-    system.bootstrap()
-})
+system.bootstrap()
+    .then(() => {
+        return system.install([
+            require('solais-server'),
+            require('solais-server-static')
+        ])
+    })
+    .then(() => {
+        // console.log(config)
+        // $server.start()
+    })
 
-system.once('ready', () => {
-    server.start()
-})
 
 if (global.gc) {
     global.gc() & setInterval(function() {

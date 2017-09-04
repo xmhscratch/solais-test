@@ -16,9 +16,5 @@
     "url": "https://github.com/xmhscratch/solais-test/issues"
   },
   "homepage": "https://github.com/xmhscratch/solais-test#readme",
-  "dependencies": {
-    "solais": "file:../solais",
-    "solais-server": "file:../solais-server",
-    "solais-server-static": "file:../solais-server-static"
-  }
+  "dependencies": {}
 }

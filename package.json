@@ -23,5 +23,10 @@
     "solais-server-api": "ssh+git://git@github.com:xmhscratch/solais-server-api.git",
     "solais-server-static": "ssh+git://git@github.com:xmhscratch/solais-server-static.git",
     "solais-orm": "ssh+git://git@github.com:xmhscratch/solais-orm.git"
+  },
+  "devDependencies": {
+    "nyan-progress-webpack-plugin": "^1.2.0",
+    "simple-progress-webpack-plugin": "^1.0.4",
+    "webpack-lighthouse-plugin": "^1.0.2"
   }
 }

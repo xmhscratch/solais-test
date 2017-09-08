@@ -7,33 +7,14 @@ system
             require('solais-server'),
             // require('solais-server-static'),
             // require('solais-server-api'),
-            // require('solais-orm')
+            require('solais-orm')
         ])
     })
-    // .then(() => {
-    //     global.$db = new System.Orm.Db()
-
-    //     return $db
-    //         .connect('claimh')
-    //         .then(() => {
-    //             $db.import('./model')
-    //         })
-    // })
-    // .then(() => {
-    //     $appl.use((req, res, next) => {
-    //         const $my = new System.Orm.Db()
-
-    //         $my
-    //             .connect('claimh')
-    //             .then(() => {
-    //                 $db.import('./model/my')
-    //             })
-
-    //         req.$my = $my
-    //         return next()
-    //     })
-    // })
     .then(() => {
+        global.$db = new System.Orm.TenancyManager('webgate')
+
+        console.log($db.getMember('d5437091-2b01-4f0b-828a-692c473c2f0c'))
+
         $server.start()
         $server.autoRefresh()
     })

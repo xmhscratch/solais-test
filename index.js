@@ -35,7 +35,7 @@ system
     // })
     .then(() => {
         $server.start()
-        // $server.autoRefresh()
+        $server.autoRefresh()
     })
     .catch((error) => {
         console.log(error)

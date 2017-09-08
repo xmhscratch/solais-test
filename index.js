@@ -11,9 +11,17 @@ system
         ])
     })
     .then(() => {
-        global.$db = new System.Orm.TenancyManager('webgate')
+        // global.$db = new System.Orm.Tenancy.Multi('webgate')
 
-        console.log($db.getMember('d5437091-2b01-4f0b-828a-692c473c2f0c'))
+        // $db.getModerator()
+        // $db.getMember('d5437091-2b01-4f0b-828a-692c473c2f0c')
+        // var test = new System.Orm.Db()
+        // test.connect(null)
+        //     .then(() => {
+        //         console.log(test.connection.query)
+        //     })
+        //     .catch(error => {
+        //     })
 
         $server.start()
         $server.autoRefresh()

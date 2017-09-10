@@ -19,7 +19,7 @@ system
     .then(($db) => {
         global.$db = $db
 
-        $db.createMember()
+        // $db.createMember()
          // .then(console.log)
         // $db.getMember(
         //     '1b3d6c7b-295c-4e00-884c-dde01a763d2f'

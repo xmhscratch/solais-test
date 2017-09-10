@@ -19,10 +19,14 @@ system
     .then(($db) => {
         global.$db = $db
 
-        // $db.createMember()
+        $db.createMember()
+         // .then(console.log)
+        // $db.getMember(
+        //     '1b3d6c7b-295c-4e00-884c-dde01a763d2f'
+        // ).then(console.log)
         // $db.removeMember(
-        //     '98f98085-9ff0-458b-a5ea-61a3b33ae17b'
-        // )
+        //     '1b3d6c7b-295c-4e00-884c-dde01a763d2f'
+        // ).then(console.log)
 
         $server.start()
         $server.autoRefresh()

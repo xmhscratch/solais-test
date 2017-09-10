@@ -11,18 +11,24 @@ system
         ])
     })
     .then(() => {
-        // global.$db = new System.Orm.Tenancy.Multi('webgate')
+        return new System.Orm.Tenancy.Multi('webgate')
+            .initialize()
+            .then(($db) => {
+                global.$db = $db
 
-        // $db.getModerator()
-        // $db.getMember('d5437091-2b01-4f0b-828a-692c473c2f0c')
-        // var test = new System.Orm.Db()
-        // test.connect(null)
-        //     .then(() => {
-        //         console.log(test.connection.query)
-        //     })
-        //     .catch(error => {
-        //     })
+                // $db
+                //     .createMember()
+                //     .then((member) => {
+                //         // console.log(member)
+                //         // console.log($db._members)
+                //     })
 
+                // $db.removeMember(
+                //     '98f98085-9ff0-458b-a5ea-61a3b33ae17b'
+                // )
+            })
+    })
+    .then(() => {
         $server.start()
         $server.autoRefresh()
     })

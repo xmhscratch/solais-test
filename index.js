@@ -11,18 +11,19 @@ system
         ])
     })
     .then(() => {
-        return new System.Orm.MultiTenancy()
-            .initialize('webgate')
-            .then(($db) => {
-                global.$db = $db
+        const { MultiTenancy } = System.Orm
+        const multiTenancy = new MultiTenancy()
 
-                // $db.createMember()
-                // $db.removeMember(
-                //     '98f98085-9ff0-458b-a5ea-61a3b33ae17b'
-                // )
-            })
+        return multiTenancy.initialize('webgate')
     })
-    .then(() => {
+    .then(($db) => {
+        global.$db = $db
+
+        // $db.createMember()
+        // $db.removeMember(
+        //     '98f98085-9ff0-458b-a5ea-61a3b33ae17b'
+        // )
+
         $server.start()
         $server.autoRefresh()
     })

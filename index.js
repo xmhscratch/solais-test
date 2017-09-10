@@ -11,18 +11,12 @@ system
         ])
     })
     .then(() => {
-        return new System.Orm.Tenancy.Multi('webgate')
-            .initialize()
+        return new System.Orm.MultiTenancy()
+            .initialize('webgate')
             .then(($db) => {
                 global.$db = $db
 
-                // $db
-                //     .createMember()
-                //     .then((member) => {
-                //         // console.log(member)
-                //         // console.log($db._members)
-                //     })
-
+                // $db.createMember()
                 // $db.removeMember(
                 //     '98f98085-9ff0-458b-a5ea-61a3b33ae17b'
                 // )

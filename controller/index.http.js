@@ -7,6 +7,15 @@ module.exports = {
         }
     },
 
+    '/mytest': {
+        GET: [
+            System.API.Protection.OAuthV2(),
+            function(req, res, next) {
+                res.json({ test: '345345' })
+            }
+        ]
+    },
+
     '/test-middware': {
     	'GET, POST': [
     		function(req, res, next) {

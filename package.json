@@ -19,14 +19,10 @@
   "homepage": "https://github.com/xmhscratch/solais-test#readme",
   "dependencies": {
     "solais": "ssh+git://git@github.com:xmhscratch/solais.git",
+    "solais-orm": "ssh+git://git@github.com:xmhscratch/solais-orm.git",
     "solais-server": "ssh+git://git@github.com:xmhscratch/solais-server.git",
     "solais-server-api": "ssh+git://git@github.com:xmhscratch/solais-server-api.git",
-    "solais-server-static": "ssh+git://git@github.com:xmhscratch/solais-server-static.git",
-    "solais-orm": "ssh+git://git@github.com:xmhscratch/solais-orm.git"
+    "solais-server-static": "ssh+git://git@github.com:xmhscratch/solais-server-static.git"
   },
-  "devDependencies": {
-    "nyan-progress-webpack-plugin": "^1.2.0",
-    "simple-progress-webpack-plugin": "^1.0.4",
-    "webpack-lighthouse-plugin": "^1.0.2"
-  }
+  "devDependencies": {}
 }

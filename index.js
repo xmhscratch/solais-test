@@ -4,10 +4,10 @@ system
     .bootstrap()
     .then(() => {
         return system.install([
+            require('solais-orm'),
             require('solais-server'),
             // require('solais-server-static'),
-            // require('solais-server-api'),
-            require('solais-orm')
+            require('solais-server-api')
         ])
     })
     .then(() => {

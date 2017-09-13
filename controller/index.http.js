@@ -1,4 +1,4 @@
-// console.log(47755)
+console.log(System.API)
 
 module.exports = {
     '/': {

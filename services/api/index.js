@@ -5,8 +5,8 @@ system
     .then(() => {
         return system.install([
             require('solais-server'),
-            require('solais-orm'),
-            require('solais-server-api')
+            // require('solais-orm'),
+            // require('solais-server-api')
         ])
     })
     .catch((error) => {

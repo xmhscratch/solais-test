@@ -6,7 +6,7 @@ system
         system.install([
             require('solais-server'),
             // require('solais-orm'),
-            // require('solais-server-static'),
+            require('solais-server-static'),
             // require('solais-server-api')
         ])
     )

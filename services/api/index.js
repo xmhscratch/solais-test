@@ -33,7 +33,7 @@ system.once('ready', () => {
     //     .then(($db) => {
     //         global.$db = $db
     //     })
-        
+
     // $server.start()
     // $server.autoRefresh()
 })

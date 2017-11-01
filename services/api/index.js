@@ -5,7 +5,7 @@ system
     .then(() => {
         return system.install([
             require('solais-server'),
-            // require('solais-orm'),
+            require('solais-orm'),
             // require('solais-server-api')
         ])
     })
@@ -13,23 +13,28 @@ system
         console.error(error)
     })
 
-console.time('test')
-
+// console.time('test')
 system.once('ready', () => {
-    console.timeEnd('test')
+    // console.timeEnd('test')
+
     // const { MultiTenancy } = System.Orm
     // const multiTenancy = new MultiTenancy()
-
     // return multiTenancy.initialize('webgate')
-
     // global.$db = $db
-
     // $db.createMember().then(console.log)
     // const tenantId = 'fac65886-3ca0-4706-af00-926d34472799'
     // $db.getMember(tenantId).then(console.log)
     // $db.removeMember(tenantId).then(console.log)
 
-    $server.start()
+    // const { SingleTenancy } = System.Orm
+    // const singleTenancy = new SingleTenancy()
+    // singleTenancy
+    //     .initialize('constant_form')
+    //     .then(($db) => {
+    //         global.$db = $db
+    //     })
+        
+    // $server.start()
     // $server.autoRefresh()
 })
 

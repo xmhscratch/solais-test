@@ -7,7 +7,7 @@ module.exports = {
 
     '/mytest': {
         GET: [
-            System.Api.Protection.OAuthV2(),
+            // System.Api.Protection.OAuthV2(),
             function(req, res, next) {
                 res.json({ test: '345345' })
             }

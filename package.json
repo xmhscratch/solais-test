@@ -1,5 +1,5 @@
 {
-  "name": "solais-test",
+  "name": "@claimh/solais-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,6 +7,7 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xmhscratch/solais-test.git"

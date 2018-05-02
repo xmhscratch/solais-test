@@ -19,11 +19,11 @@
   },
   "homepage": "https://github.com/xmhscratch/solais-test#readme",
   "dependencies": {
-    "solais": "ssh+git://git@github.com:xmhscratch/solais.git",
-    "solais-orm": "ssh+git://git@github.com:xmhscratch/solais-orm.git",
-    "solais-server": "ssh+git://git@github.com:xmhscratch/solais-server.git",
-    "solais-server-api": "ssh+git://git@github.com:xmhscratch/solais-server-api.git",
-    "solais-server-static": "ssh+git://git@github.com:xmhscratch/solais-server-static.git"
+    "@claimh/solais": "^1.0.0",
+    "@claimh/solais-orm": "^1.0.0",
+    "@claimh/solais-server": "^1.0.0",
+    "@claimh/solais-server-api": "^1.0.0",
+    "@claimh/solais-server-static": "^1.0.0"
   },
   "devDependencies": {}
 }

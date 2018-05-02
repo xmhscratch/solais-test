@@ -1,5 +1,5 @@
 {
-  "name": "@claimh/solais-test",
+  "name": "solais-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/xmhscratch/solais-test#readme",
   "dependencies": {
-    "@claimh/solais": "^1.0.0",
-    "@claimh/solais-orm": "^1.0.0",
-    "@claimh/solais-server": "^1.0.0",
-    "@claimh/solais-server-api": "^1.0.0",
-    "@claimh/solais-server-static": "^1.0.0"
+    "solais": "^1.0.0",
+    "solais-orm": "^1.0.0",
+    "solais-server": "^1.0.0",
+    "solais-server-api": "^1.0.0",
+    "solais-server-static": "^1.0.0"
   },
   "devDependencies": {}
 }
